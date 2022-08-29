@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f1;
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 0;
+}
+
+.wrapper__text {
+  background-color: #4f94d4;
+  justify-content: center;
+
+}
+
+.bday__class {
+  background-color: #4f94d4;
+  justify-content: center;
+  padding: 30px;
+}
+
+.bday__class2 {
+  background-color: #4f94d4;
+  justify-content: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+  font-size: 17px;
+  height: 95px;
+  align-items: center;
+}
+
+.morg__img {
+  width: 100px;
+  height: 125px;
+}
+
+.wrapup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.bday__class:hover {
+  background-color: crimson;
+  animation-name: transit;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.bday__class2:hover {
+  background-color: crimson;
+  animation-name: transit;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.wrapper__text:hover{
+  background-color: crimson;
+  animation-name: transit;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transit {
+  from {
+  border-radius: 0px;
+  }
+  to {
+  border-radius: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+  
+  .morg__img {
+    width: 75px;
+    height: 100px;
+  }
+  
+  .bday__class2 {
+    font-size: 13px;
+    justify-content: space-between;
+    height: 95px;
+    align-items: center;
+  }
+  
+  .wrapup {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    text-align: justify;
+  }
+  
+  .wrapup2 {
+    max-width: 150px;
+    margin-left: 20px;
+  }
+  
+}
